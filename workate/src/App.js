@@ -7,7 +7,7 @@ function App() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [data, setData] = useState([]);
-  const [counter, setCounter] = useState(3);
+  const [counter, setCounter] = useState(3); 
   
   useEffect(() => {
     fetch("https://picsum.photos/v2/list")
@@ -32,7 +32,7 @@ function App() {
     return <div>Loading...</div>;
   } else {
   return ( 
-    <> 
+    <>
     <div className='container'>
       <div className='gallery'>
         <PhotoList photosToRender={photoToShow}/>

@@ -62,6 +62,34 @@ body {
      object-position: bottom;
   width: 100%;
   max-height: 400px;
+  -webkit-animation: 0.5s ease-out 0s 1 appear;
+          animation: 0.5s ease-out 0s 1 appear;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .container .gallery .photo:hover {
